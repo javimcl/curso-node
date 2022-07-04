@@ -6,7 +6,7 @@ const usersGet = (req = request , res = response) => {
     const {q, nombre = 'No name', apikey, page=1, limit} = req.query;
 
     res.json({
-        msg: 'get API controlador',
+        msg: 'get API controller',
         q,
         nombre,
         apikey,
@@ -20,7 +20,7 @@ const usersPost = (req, res = response) => {
     const body = req.body;
 
     res.json({
-        msg: 'post API controlador',
+        msg: 'post API controller',
         body
     })
 }
@@ -28,20 +28,20 @@ const usersPost = (req, res = response) => {
 const usersPut = (req, res = response) => {
     const id = req.params.id;
     res.json({
-        msg: 'put API controlador',
+        msg: 'put API controller',
         id
     })
 }
 
 const usersPath = (req, res = response) => {
     res.json({
-        msg: 'path API controlador'
+        msg: 'path API controller'
     })
 }
 
 const usersDelete = (req, res = response) => {
     res.json({
-        msg: 'delete API controlador'
+        msg: 'delete API controller'
     })
 }
 module.exports = {
