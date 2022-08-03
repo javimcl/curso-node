@@ -16,6 +16,7 @@ const isAdminRole = (req, res = response, next) => {
             msg: `${name} not is Admin - can't do this`
         })
     }
+    next();
 
 }
 
