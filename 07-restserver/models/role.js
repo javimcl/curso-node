@@ -6,7 +6,7 @@ const RoleSchema = Schema ({
 
     rol: {
         type: String,
-        require: [true, 'The role is required']
+        required: [true, 'The role is required']
     }
 })
 

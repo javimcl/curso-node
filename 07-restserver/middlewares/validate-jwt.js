@@ -44,9 +44,6 @@ const validateJWT = async(req = request, res = response, next) => {
             msg: 'Invalid token'
         })
     }
-
-    next()
-
 }
 
 module.exports = {
